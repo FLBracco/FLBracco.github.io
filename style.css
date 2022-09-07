@@ -1,20 +1,22 @@
 * {
-    background: #181818;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+body {
+    background: #181818;
+    width: 100vw;
+}
+ /* Menú de la Pagina */
+
 .header {
     background: #3a3a3a;
+    /* background: #ff00aa; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-}
-
-.header .logo {
-    background: #3a3a3a;
 }
 
 .header .logo img {
@@ -26,16 +28,16 @@
 
 .nav-links {
     list-style: none;
-    background: #3a3a3a;
+ 
 }
 
 .nav-links li {
-    background: #3a3a3a;
+ 
     display: inline-block; 
 }
 
 .nav-links li a {
-    background: #3a3a3a;
+
     display: block;
     text-decoration: none;
     color: #c4c5c5;
@@ -48,4 +50,74 @@
     color: #fffefe;
     cursor: pointer;
     transform: scale(150%);
+}
+
+/* Información sobre mi */
+
+.container {
+    width: 70%;
+    height: 500px;
+    margin: 20px 15% 20px 15%;
+    display: flex;
+    border-radius: 10%;
+}
+.container .about {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: auto;
+    background: #212121;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.about .about-me{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-nac{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-nac img{
+    height: 60%;
+    width: auto;
+    border: 5px solid #403c3c;
+    border-radius: 20%;
+}
+.container .about .about-me img{
+    height: 200px;
+    width: auto;
+    border: 5px solid #403c3c;
+    border-radius: 100%;
+}
+.container aside{
+    background: #adadad;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+aside .about-info h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+aside .about-info p{
+    text-align: justify;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px;
 }
