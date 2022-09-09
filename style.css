@@ -8,6 +8,7 @@ body {
     background: #181818;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
  /* Menú de la Pagina */
 
@@ -24,14 +25,29 @@ body {
 
 .header .logo{
     height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
-.header .logo img {
-    height: 70px;
-    width: auto;
-    border-radius: 100%;
-    cursor: pointer;
+.header .logo p {
     margin-left: 5px;
+    color: #c4c5c5;
+    font-size: 20px;
+    padding: 15px;
+    user-select: none;
+}
+
+.header .logo p:hover{
+    color: #fffefe;
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+.header .logo p:active{
+    transform: scale(90%);
+    transition-duration: 100ms;
 }
 
 .nav-links {
@@ -254,13 +270,9 @@ aside .about-info p{
     align-items: center;
     justify-content: center;
 }
-.footer .footer-tittle {
-    height: 20%;
-    text-align: center;
-}
 
 .footer .footer-img {
-    height: 80%;
+    height: 100%;
     padding: 10px 10px;
 }
 
@@ -268,7 +280,10 @@ aside .about-info p{
     height: 100%;
     width: auto;
     padding: 0px 5px;
-    border-radius: 100%;
+}
+
+.footer .footer-img img:hover {
+    transform: scale(120%);
 }
 
 .footer .footer-img img:active {
