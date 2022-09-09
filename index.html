@@ -15,7 +15,7 @@
                 <li><a href="#portfolio">Inicio</a></li>
                 <li><a href="#about">Sobre Mi</a></li>
                 <li><a href="#skills">Conocimientos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#form">Contacto</a></li>
             </ul>
        </nav>
     </header>
@@ -49,22 +49,24 @@
             <img src="resources/git-Icon.png"/>
         </div>   
     </section> 
-    <section>
-        <div class="" id="contact">
-            <h2>Contact Form</h2>
-            <form target="_blank" action="https://formsubmit.co/braccof.0601@gmail.com" method="post">
-                <label for="nombre">Nombre:</label>
-                <input placeholder="Ingrese Nombre..." name="nombre" id="nombre"/>
-                <label for="email">Email:</label>
-                <input placeholder="Ingrese email..." name="email" id="email"/>
-                <label for="comentario">Comentario:</label>
-                <textarea id="comentario" name="comentario" placeholder="Ingrese comentario...."></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+    <section class="contact" id="form">
+            <div class="contact-tittle">
+                <h2>Contact Form</h2>
+            </div>
+            <div class="contact-form">
+                <form target="_blank" action="https://formsubmit.co/braccof.0601@gmail.com" method="post">
+                    <input placeholder="INGRESE NOMBRE.." name="nombre" id="nombre" required/>
+                    <input placeholder="INGRESE EMAIL.." name="email" id="email" required/>
+                    <textarea id="comentario" name="comentario" placeholder="INGRESE COMENTARIO.."></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
     </section>
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="footer-tittle">
+            <h2>OTRA MANERA DE CONTACTARME</h2>
+        </div>
+        <div class="footer-img">
             <a target="_blank" href="https://github.com/FLBracco"><img src="resources/github-icon.png"/></a>
             <a target="_blank" href="https://www.linkedin.com/in/fabricio-bracco-833947246/"><img src="resources/linkedin-icon.png"/></a>
         </div>
