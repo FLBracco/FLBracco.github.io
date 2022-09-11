@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #181818;
+    background: #7159EB;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -13,7 +13,7 @@ body {
  /* Menú de la Pagina */
 
 .header {
-    background: #3a3a3a;
+    /* background: #3a3a3a; */
     /* background: #ff00aa; */
     height: 12%;
     width: 100%;
@@ -33,20 +33,19 @@ body {
 
 .header .logo p {
     margin-left: 5px;
-    color: #c4c5c5;
+    color: #EBA571;
     font-size: 20px;
     padding: 15px;
     user-select: none;
 }
 
 .header .logo p:hover{
-    color: #fffefe;
     cursor: pointer;
-    transform: scale(120%);
+    transform: scale(110%);
 }
 
 .header .logo p:active{
-    transform: scale(90%);
+    transform: scale(100%);
     transition-duration: 100ms;
 }
 
@@ -62,14 +61,13 @@ body {
 
     display: block;
     text-decoration: none;
-    color: #c4c5c5;
+    color: #EBA571;
     padding: 5px;
     margin: 0px 40px;
     font-size: 20px;
 }
 
 .nav-links li a:hover{
-    color: #fffefe;
     cursor: pointer;
     transform: scale(150%);
 }
@@ -90,7 +88,7 @@ body {
     flex-direction: column;
     justify-content: center;
     justify-items: auto;
-    background: #212121;
+    /* background: #212121; */
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
 }
@@ -113,17 +111,17 @@ body {
 .about .about-nac img{
     height: 60%;
     width: auto;
-    border: 5px solid #403c3c;
+    border: 2px solid #F551DB;
     border-radius: 20%;
 }
 .container .about .about-me img{
     height: 200px;
     width: auto;
-    border: 5px solid #403c3c;
+    border: 2px solid #F551DB;
     border-radius: 100%;
 }
 .container aside{
-    background: #adadad;
+    /* background: #adadad; */
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -135,6 +133,7 @@ body {
 aside .about-info h2{
     text-align: center;
     font-size: 2rem;
+    color: #D4A15B;
 }
 
 aside .about-info p{
@@ -142,12 +141,13 @@ aside .about-info p{
     font-size: 20px;
     width: 100%;
     padding: 5px;
+    color: #EBA571;
 }
 
-/* Parte de skilss */
+/* Conocimientos */
 
 .container-skills {
-    background: #3a3a3a;
+    /* background: #3a3a3a; */
     width: 70%;
     height: 15%;
     display: flex;
@@ -155,7 +155,7 @@ aside .about-info p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 30px 15%;
+    margin: 10% 15%;
     border-radius: 20px;
 }
 
@@ -165,12 +165,13 @@ aside .about-info p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px 0px 50px;
 }
 
 .container-skills .skills-img img {
-    height: 50px;
+    height: 100px;
     width: auto;
-    padding: 0 5px;
+    margin: 0 40px 0;
 }
 
 .container-skills .skills-tittle {
@@ -179,14 +180,15 @@ aside .about-info p{
 }
 
 .container-skills .skills-tittle h2{
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin: 0 0 5px 0;
+    color: #D4A15B;
 }
 
-/* Contact Form */
+/* Formulario de contacto */
 
 .contact {
-    background: #fafafa;
+    /* background: #fafafa; */
     height: 50%;
     width: 70%;
     margin: 5px 15%;
@@ -205,7 +207,8 @@ aside .about-info p{
 }
 
 .contact .contact-tittle h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    color: #D4A15B;
 }
 
 .contact .contact-form {
@@ -229,29 +232,59 @@ aside .about-info p{
     height: 20%;
     width: 80%;
     text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: #7159EB;
+    border: 1px solid #F551DB;
+    color: #EBA571;  
+    padding-left: 5px; 
 }
 
 .contact .contact-form textarea {
     width: 80%;
     height: 40%;
-    margin: 0px 10%;
+    margin: 5px 10%;
     display: block;
     border-radius: 10px;
+    font-size: 1.5rem;
     text-align: left;
+    font-weight: 400;
+    background: #7159EB;
+    border: 1px solid #F551DB;
+    color: #EBA571;
+    padding-left: 5px;
+    user-select: none;
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 40%;
+    max-height: 40%;
 }
 
+::placeholder {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    color: #D4A15B;
+    user-select: none;
+    font-weight: 700;
+}
+
+
 .contact .contact-form button {
-    margin: 10px 0;
+    margin: 20px 0;
     text-decoration: none;
     width: 15%;
-    height: 10%;
+    height: 15%;
     border-radius: 50px;
-    /* color: #2655C1; */
-    background-color: #1CA0E7;   
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid #F551DB;
+    background-color: #5379D7;
+    color: #D4A15B;
 }
 
 .contact .contact-form button:hover {
     cursor: pointer;
+    transform: scale(120%);
 }
 
 .contact .contact-form button:active {
@@ -263,7 +296,7 @@ aside .about-info p{
 .footer {
     width: 100%;
     height: 12%;
-    background: #3a3a3a;
+    /* background: #3a3a3a; */
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -279,7 +312,9 @@ aside .about-info p{
 .footer .footer-img img{
     height: 100%;
     width: auto;
-    padding: 0px 5px;
+    margin: 0 10px;
+    border: 2px solid #52CAF7;
+    border-radius: 100%;
 }
 
 .footer .footer-img img:hover {
